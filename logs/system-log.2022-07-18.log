@@ -1,0 +1,389 @@
+[INFO ] 2022-07-18 11:08:58,441 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 11:08:58,448 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 11:08:58,449 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 11:08:58,449 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 11:08:58,583 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 11:08:58,584 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1091 ms 
+[ERROR] 2022-07-18 11:08:58,595 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatStarter] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'org.apache.cxf.spring.boot.autoconfigure.CxfAutoConfiguration': Unsatisfied dependency expressed through field 'properties'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'cxf-org.apache.cxf.spring.boot.autoconfigure.CxfProperties': Could not bind properties to 'CxfProperties' : prefix=cxf, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is javax.validation.NoProviderFoundException: Unable to create a Configuration, because no Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath. 
+[INFO ] 2022-07-18 11:08:58,634 --main-- [org.apache.catalina.core.StandardService] Stopping service [Tomcat] 
+[WARN ] 2022-07-18 11:08:58,637 --main-- [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat 
+[INFO ] 2022-07-18 11:08:58,650 --main-- [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+[ERROR] 2022-07-18 11:08:58,656 --main-- [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Bean Validation API is on the classpath but no implementation could be found
+
+Action:
+
+Add an implementation, such as Hibernate Validator, to the classpath
+ 
+[INFO ] 2022-07-18 11:11:56,860 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 11:11:57,781 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 11:11:57,787 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 11:11:57,788 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 11:11:57,788 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 11:11:57,889 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 11:11:57,889 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 868 ms 
+[INFO ] 2022-07-18 11:11:58,487 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://webservice.common.bmSystem.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 11:11:58,572 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 11:11:58,689 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[WARN ] 2022-07-18 11:11:58,695 --main-- [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/example/springbootsample/webservice/server/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.cxf.endpoint.Endpoint]: Factory method 'endpoint' threw exception; nested exception is java.lang.ClassCastException: org.apache.cxf.jaxws.EndpointImpl cannot be cast to org.apache.cxf.endpoint.Endpoint 
+[INFO ] 2022-07-18 11:11:58,698 --main-- [org.apache.catalina.core.StandardService] Stopping service [Tomcat] 
+[INFO ] 2022-07-18 11:11:58,708 --main-- [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+[ERROR] 2022-07-18 11:11:58,733 --main-- [org.springframework.boot.SpringApplication] Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'endpoint' defined in class path resource [com/example/springbootsample/webservice/server/config/WebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.cxf.endpoint.Endpoint]: Factory method 'endpoint' threw exception; nested exception is java.lang.ClassCastException: org.apache.cxf.jaxws.EndpointImpl cannot be cast to org.apache.cxf.endpoint.Endpoint
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.example.springbootsample.SpringBootSampleApplication.main(SpringBootSampleApplication.java:30)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.cxf.endpoint.Endpoint]: Factory method 'endpoint' threw exception; nested exception is java.lang.ClassCastException: org.apache.cxf.jaxws.EndpointImpl cannot be cast to org.apache.cxf.endpoint.Endpoint
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	... 20 common frames omitted
+Caused by: java.lang.ClassCastException: org.apache.cxf.jaxws.EndpointImpl cannot be cast to org.apache.cxf.endpoint.Endpoint
+	at com.example.springbootsample.webservice.server.config.WebServiceConfig.endpoint(WebServiceConfig.java:27)
+	at com.example.springbootsample.webservice.server.config.WebServiceConfig$$EnhancerBySpringCGLIB$$e0d2945c.CGLIB$endpoint$0(<generated>)
+	at com.example.springbootsample.webservice.server.config.WebServiceConfig$$EnhancerBySpringCGLIB$$e0d2945c$$FastClassBySpringCGLIB$$705e4efe.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.example.springbootsample.webservice.server.config.WebServiceConfig$$EnhancerBySpringCGLIB$$e0d2945c.endpoint(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+[INFO ] 2022-07-18 11:17:48,780 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 11:17:49,675 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 11:17:49,682 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 11:17:49,683 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 11:17:49,683 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 11:17:49,781 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 11:17:49,781 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 829 ms 
+[INFO ] 2022-07-18 11:17:50,196 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://webservice.common.bmSystem.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 11:17:50,270 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 11:17:50,393 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[INFO ] 2022-07-18 11:17:50,456 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-18 11:17:50,750 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-18 11:17:50,773 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 11:17:50,800 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[INFO ] 2022-07-18 11:28:36,120 --http-nio-80-exec-2-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] 2022-07-18 11:28:36,121 --http-nio-80-exec-2-- [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] 2022-07-18 11:28:36,127 --http-nio-80-exec-2-- [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 6 ms 
+[INFO ] 2022-07-18 11:40:05,612 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 11:40:06,734 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 11:40:06,742 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 11:40:06,742 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 11:40:06,743 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 11:40:06,839 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 11:40:06,839 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 937 ms 
+[INFO ] 2022-07-18 11:40:07,218 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://xcb.targetname.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 11:40:07,284 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 11:40:07,389 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[INFO ] 2022-07-18 11:40:07,439 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-18 11:40:07,634 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-18 11:40:07,652 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 11:40:07,669 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[WARN ] 2022-07-18 11:48:18,028 --main-- [org.apache.axis.utils.JavaUtils] Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled. 
+[WARN ] 2022-07-18 11:48:18,890 --http-nio-80-exec-4-- [org.apache.cxf.phase.PhaseInterceptorChain] Interceptor for {http://xcb.targetname.com}HelloWordImplService#{http://webservice.common.bmSystem.com}sat has thrown exception, unwinding now 
+org.apache.cxf.interceptor.Fault: Unexpected wrapper element {http://xcb.targetname.com}sat found.   Expected {http://webservice.common.bmSystem.com}sat.
+	at org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor.handleMessage(DocLiteralInInterceptor.java:107)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:191)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] 2022-07-18 11:48:55,258 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 11:48:56,198 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 11:48:56,204 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 11:48:56,204 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 11:48:56,204 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 11:48:56,310 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 11:48:56,311 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 868 ms 
+[INFO ] 2022-07-18 11:48:56,748 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://xcb.targetname.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 11:48:56,832 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 11:48:56,948 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[INFO ] 2022-07-18 11:48:57,005 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-18 11:48:57,289 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-18 11:48:57,326 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 11:48:57,353 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[WARN ] 2022-07-18 11:49:05,806 --main-- [org.apache.axis.utils.JavaUtils] Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled. 
+[WARN ] 2022-07-18 11:49:06,754 --http-nio-80-exec-2-- [org.apache.cxf.phase.PhaseInterceptorChain] Interceptor for {http://xcb.targetname.com}HelloWordImplService#{http://xcb.targetname.com}sat has thrown exception, unwinding now 
+org.apache.cxf.interceptor.Fault: Unmarshalling Error: 意外的元素 (uri:"", local:"resType")。所需元素为<{}hello> 
+	at org.apache.cxf.jaxb.JAXBEncoderDecoder.unmarshall(JAXBEncoderDecoder.java:932)
+	at org.apache.cxf.jaxb.JAXBEncoderDecoder.unmarshall(JAXBEncoderDecoder.java:738)
+	at org.apache.cxf.jaxb.io.DataReaderImpl.read(DataReaderImpl.java:170)
+	at org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor.handleMessage(DocLiteralInInterceptor.java:109)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:191)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.xml.bind.UnmarshalException: null
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.handleStreamException(UnmarshallerImpl.java:468)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:402)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:379)
+	at org.apache.cxf.jaxb.JAXBEncoderDecoder.doUnmarshal(JAXBEncoderDecoder.java:881)
+	at org.apache.cxf.jaxb.JAXBEncoderDecoder.access$200(JAXBEncoderDecoder.java:103)
+	at org.apache.cxf.jaxb.JAXBEncoderDecoder$3.run(JAXBEncoderDecoder.java:920)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.jaxb.JAXBEncoderDecoder.unmarshall(JAXBEncoderDecoder.java:918)
+	... 51 common frames omitted
+Caused by: com.sun.istack.internal.SAXParseException2: 意外的元素 (uri:"", local:"resType")。所需元素为<{}hello>
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext.handleEvent(UnmarshallingContext.java:726)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader.reportError(Loader.java:247)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader.reportError(Loader.java:242)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader.reportUnexpectedChildElement(Loader.java:109)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader.childElement(Loader.java:90)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.StructureLoader.childElement(StructureLoader.java:237)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:556)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:538)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.StAXStreamConnector.handleStartElement(StAXStreamConnector.java:231)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.StAXStreamConnector.bridge(StAXStreamConnector.java:165)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:400)
+	... 57 common frames omitted
+Caused by: javax.xml.bind.UnmarshalException: 意外的元素 (uri:"", local:"resType")。所需元素为<{}hello>
+	... 68 common frames omitted
+[WARN ] 2022-07-18 11:49:46,728 --main-- [org.apache.axis.utils.JavaUtils] Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled. 
+[INFO ] 2022-07-18 12:05:42,053 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 12:05:42,929 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 12:05:42,935 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 12:05:42,935 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 12:05:42,935 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 12:05:43,031 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 12:05:43,031 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 799 ms 
+[INFO ] 2022-07-18 12:05:43,413 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://xcb.targetname.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 12:05:43,482 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 12:05:43,595 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[INFO ] 2022-07-18 12:05:43,649 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-18 12:05:43,856 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-18 12:05:43,874 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 12:05:43,889 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[WARN ] 2022-07-18 12:12:10,169 --main-- [org.apache.axis.utils.JavaUtils] Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled. 
+[INFO ] 2022-07-18 15:04:09,014 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 15:04:10,294 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 15:04:10,301 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:04:10,302 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 15:04:10,302 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 15:04:10,398 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 15:04:10,398 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1090 ms 
+[INFO ] 2022-07-18 15:04:10,930 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://xcb.targetname.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 15:04:11,048 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 15:04:11,190 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[INFO ] 2022-07-18 15:04:11,249 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-18 15:04:11,526 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-18 15:04:11,568 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:04:11,590 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[INFO ] 2022-07-18 15:04:38,921 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 15:05:03,902 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 15:05:03,910 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:05:03,910 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 15:05:03,910 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 15:05:04,013 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 15:05:04,013 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 925 ms 
+[INFO ] 2022-07-18 15:05:04,494 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://xcb.targetname.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 15:05:04,588 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 15:05:04,735 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[INFO ] 2022-07-18 15:05:04,797 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-18 15:05:05,065 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-18 15:05:05,089 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:05:05,108 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[INFO ] 2022-07-18 15:18:11,426 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 15:18:26,775 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 15:18:26,783 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:18:26,784 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 15:18:26,784 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 15:18:26,889 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 15:18:26,889 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 970 ms 
+[INFO ] 2022-07-18 15:18:27,349 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://xcb.targetname.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 15:18:27,430 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 15:18:27,555 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[INFO ] 2022-07-18 15:18:27,612 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-18 15:18:27,834 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-18 15:18:27,855 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:18:27,876 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[INFO ] 2022-07-18 15:38:42,583 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 15:38:43,637 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 15:38:43,644 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:38:43,644 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 15:38:43,644 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 15:38:43,741 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 15:38:43,741 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 956 ms 
+[INFO ] 2022-07-18 15:38:44,189 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://xcb.targetname.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 15:38:44,280 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 15:38:44,415 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[INFO ] 2022-07-18 15:38:44,470 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-18 15:38:44,709 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-18 15:38:44,729 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:38:44,748 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[INFO ] 2022-07-18 15:38:51,353 --http-nio-80-exec-1-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] 2022-07-18 15:38:51,353 --http-nio-80-exec-1-- [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] 2022-07-18 15:38:51,406 --http-nio-80-exec-1-- [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 53 ms 
+[INFO ] 2022-07-18 15:38:51,475 --http-nio-80-exec-1-- [com.example.springbootsample.logsample.LogSampleServiceImpl] log sampple text hello word  
+[INFO ] 2022-07-18 15:39:11,759 --http-nio-80-exec-3-- [com.example.springbootsample.logsample.LogSampleServiceImpl] log sampple text hello word  
+[INFO ] 2022-07-18 15:47:55,004 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 15:47:56,099 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 15:47:56,106 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:47:56,107 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 15:47:56,107 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 15:47:56,210 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 15:47:56,210 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 980 ms 
+[INFO ] 2022-07-18 15:47:56,692 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://xcb.targetname.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 15:47:56,784 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 15:47:56,921 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[INFO ] 2022-07-18 15:47:56,995 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-18 15:47:57,257 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-18 15:47:57,278 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:47:57,299 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[INFO ] 2022-07-18 15:47:59,399 --http-nio-80-exec-1-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] 2022-07-18 15:47:59,399 --http-nio-80-exec-1-- [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] 2022-07-18 15:47:59,403 --http-nio-80-exec-1-- [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 4 ms 
+[INFO ] 2022-07-18 15:47:59,439 --http-nio-80-exec-1-- [com.example.springbootsample.logsample.LogSampleServiceImpl] log sampple text hello word  
+[INFO ] 2022-07-18 15:48:35,946 --background-preinit-- [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final 
+[INFO ] 2022-07-18 15:48:37,056 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-18 15:48:37,063 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:48:37,063 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-18 15:48:37,064 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-18 15:48:37,161 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-18 15:48:37,161 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 996 ms 
+[INFO ] 2022-07-18 15:48:37,604 --main-- [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] Creating Service {http://xcb.targetname.com}HelloWordImplService from class com.example.springbootsample.webservice.server.interfaces.IHelloWord 
+[INFO ] 2022-07-18 15:48:37,684 --main-- [org.apache.cxf.common.jaxb.JAXBUtils] Failed to create NoEscapeHandler 
+[INFO ] 2022-07-18 15:48:37,814 --main-- [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /helloWord 
+[INFO ] 2022-07-18 15:48:37,875 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-18 15:48:38,106 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-18 15:48:38,125 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-18 15:48:38,143 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[INFO ] 2022-07-18 15:48:42,928 --http-nio-80-exec-1-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[INFO ] 2022-07-18 15:48:42,928 --http-nio-80-exec-1-- [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet' 
+[INFO ] 2022-07-18 15:48:42,934 --http-nio-80-exec-1-- [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 6 ms 
+[INFO ] 2022-07-18 15:48:42,993 --http-nio-80-exec-1-- [com.example.springbootsample.logsample.LogSampleServiceImpl] log sampple text hello word  
+[INFO ] 2022-07-18 17:05:57,823 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] Checkpoint start 
+[INFO ] 2022-07-18 17:05:57,837 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose start 
+[INFO ] 2022-07-18 17:05:57,865 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose synched 
+[INFO ] 2022-07-18 17:05:57,890 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose script done 
+[INFO ] 2022-07-18 17:05:57,950 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose end 
+[INFO ] 2022-07-18 17:05:57,951 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] Checkpoint end - txts: 1 
+[INFO ] 2022-07-18 17:06:39,602 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose start 
+[INFO ] 2022-07-18 17:06:39,605 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose synched 
+[INFO ] 2022-07-18 17:06:39,636 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose script done 
+[INFO ] 2022-07-18 17:06:39,702 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose end 
+[INFO ] 2022-07-18 17:07:57,439 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose start 
+[INFO ] 2022-07-18 17:07:57,441 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose synched 
+[INFO ] 2022-07-18 17:07:57,476 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose script done 
+[INFO ] 2022-07-18 17:07:57,525 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose end 
+[INFO ] 2022-07-18 17:11:05,754 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose start 
+[INFO ] 2022-07-18 17:11:05,757 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose synched 
+[INFO ] 2022-07-18 17:11:05,785 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose script done 
+[INFO ] 2022-07-18 17:11:05,839 --main-- [hsqldb.db.HSQLDB82108E9C22.ENGINE] checkpointClose end 

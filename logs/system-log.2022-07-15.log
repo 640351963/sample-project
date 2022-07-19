@@ -1,0 +1,42 @@
+[INFO ] 2022-07-15 09:48:55,482 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-15 09:48:55,490 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-15 09:48:55,491 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-15 09:48:55,491 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-15 09:48:55,645 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-15 09:48:55,645 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1388 ms 
+[INFO ] 2022-07-15 09:48:56,017 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-15 09:48:56,529 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-15 09:48:56,546 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-15 09:48:56,578 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[INFO ] 2022-07-15 09:48:57,126 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Shutting down ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-15 09:49:23,358 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-15 09:49:23,366 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-15 09:49:23,367 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-15 09:49:23,367 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-15 09:49:23,468 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-15 09:49:23,469 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 835 ms 
+[INFO ] 2022-07-15 09:49:23,691 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-15 09:49:23,935 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-15 09:49:23,958 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-15 09:49:23,973 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[INFO ] 2022-07-15 09:49:28,530 --SpringContextShutdownHook-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Shutting down ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-15 09:49:31,882 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-15 09:49:31,888 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-15 09:49:31,889 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-15 09:49:31,889 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-15 09:49:31,969 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-15 09:49:31,969 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 763 ms 
+[INFO ] 2022-07-15 09:49:32,156 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-15 09:49:32,346 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-15 09:49:32,363 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-15 09:49:32,378 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 
+[INFO ] 2022-07-15 10:35:06,406 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 80 (http) 
+[INFO ] 2022-07-15 10:35:06,414 --main-- [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-15 10:35:06,414 --main-- [org.apache.catalina.core.StandardService] Starting service [Tomcat] 
+[INFO ] 2022-07-15 10:35:06,415 --main-- [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.41] 
+[INFO ] 2022-07-15 10:35:06,494 --main-- [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext 
+[INFO ] 2022-07-15 10:35:06,494 --main-- [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 786 ms 
+[INFO ] 2022-07-15 10:35:06,683 --main-- [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor' 
+[INFO ] 2022-07-15 10:35:06,877 --main-- [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 2 endpoint(s) beneath base path '/actuator' 
+[INFO ] 2022-07-15 10:35:06,895 --main-- [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-80"] 
+[INFO ] 2022-07-15 10:35:06,909 --main-- [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 80 (http) with context path '' 

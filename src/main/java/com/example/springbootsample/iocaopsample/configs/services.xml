@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="importBeans" class="com.example.springbootsample.iocaopsample.beans.ImportBeans">
+        <property name="desc" value="testDesc"/>
+        <property name="className" value="testClassName"/>
+    </bean>
+
+    <!-- factory sample-->
+    <!--    <bean id="clientService"
+              class="com.example.springbootsample.iocaopsample.factory.ClientService"
+              factory-method="createInstance"/>-->
+
+    <!-- factory -->
+    <!--    <bean id="serviceLocator" class="com.example.springbootsample.iocaopsample.factory.DefaultServiceLocator"></bean>-->
+
+    <!-- BEAN 2 CREATE VIA THE FACTORY BEAN -->
+
+    <!--    <bean id="clientService" factory-bean="serviceLocator" factory-method="createClientServiceInstance"></bean>-->
+
+    <bean id="serviceLocator" class="com.example.springbootsample.iocaopsample.factory.DefaultServiceLocator2">
+
+    </bean>
+
+    <bean id="clientService" factory-bean="serviceLocator" factory-method="clientService"/>
+
+    <bean id="accountService" factory-bean="serviceLocator" factory-method="accountService"/>
+
+</beans>
